@@ -30,6 +30,8 @@ public class Importation extends AsyncTask<String,Void,ArrayList<Livre>> {
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader buff = new BufferedReader(isr);
             ligne=buff.readLine();
+            ligne = ligne.replace("<p>","");
+            ligne = ligne.replace("</p>","");
             Log.i("parseur",ligne);
             Gson gson=new Gson();
             listeImportee = gson.fromJson(ligne,

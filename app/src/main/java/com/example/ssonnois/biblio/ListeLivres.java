@@ -1,5 +1,6 @@
 package com.example.ssonnois.biblio;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,6 +29,7 @@ public class ListeLivres extends AppCompatActivity {
         Importation tacheImport = new Importation();
         tacheImport.execute("http://10.0.2.2:3000/android");
         ListView liste = (ListView) findViewById(R.id.listeLivres);
+
         try{
             ArrayList<Livre> listeImportee = tacheImport.get();
             if(listeImportee!= null){

@@ -11,18 +11,19 @@
             android:id="@+id/txtTitre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:text="TextView"
-            android:layout_alignRight="@+id/txtResume"
-            android:layout_alignEnd="@+id/txtResume" />
+            android:textColor="@android:color/black" />
 
         <TextView
             android:id="@+id/txtResume"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:layout_marginLeft="54dp"
-            android:layout_marginStart="54dp"
             android:layout_below="@+id/txtTitre"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
@@ -30,11 +31,11 @@
             android:id="@+id/txtIsbn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/txtResume"
-            android:layout_alignParentBottom="true"
-            android:layout_alignRight="@+id/txtResume"
-            android:layout_marginBottom="29dp"
-            android:text="TextView" />
+            android:text="TextView"
+            android:layout_below="@+id/txtResume"
+            android:layout_alignLeft="@+id/txtResume"
+            android:layout_alignStart="@+id/txtResume"
+            android:layout_marginTop="45dp" />
     </RelativeLayout>
 
 </LinearLayout>

@@ -29,6 +29,8 @@
             android:layout_height="291dp"
             tools:layout_editor_absoluteX="12dp"
             tools:layout_editor_absoluteY="25dp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"
             android:layout_centerVertical="true"
             android:layout_alignLeft="@+id/txtMsg"
             android:layout_alignStart="@+id/txtMsg" />
